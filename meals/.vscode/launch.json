@@ -15,11 +15,11 @@
             "type": "dart",
             "flutterMode": "profile"
         },
-        {
-            "name": "meals (release mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        }
+        // {
+        //     "name": "meals (release mode)",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "release"
+        // }
     ]
 }
