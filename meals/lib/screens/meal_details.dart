@@ -13,6 +13,9 @@ class MealsDetailsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final favoriteMeals = ref.watch(favoriteMealsProvider);
+    final isFavorite = favoriteMeals.contains(meal);
+
     Widget content = SingleChildScrollView(
       child: Column(
         children: [
@@ -91,7 +94,9 @@ class MealsDetailsScreen extends ConsumerWidget {
                   ),
                 );
               },
-              icon: const Icon(Icons.star))
+              icon: isFavorite
+                  ? const Icon(Icons.star)
+                  : const Icon(Icons.star_border)),
         ],
       ),
       body: content,

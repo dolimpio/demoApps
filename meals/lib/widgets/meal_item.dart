@@ -3,7 +3,6 @@ import 'package:meals/widgets/meal_item_trait.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 import '../models/meal.dart';
-import '../screens/meal_details.dart';
 
 class MealItem extends StatelessWidget {
   const MealItem({
